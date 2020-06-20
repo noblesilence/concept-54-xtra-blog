@@ -10,12 +10,15 @@
     <link href="css/tooplate-style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="tm-header">
+	<header class="tm-header" id="tm-header">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="tm-site-header">
             <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
             <h1 class="text-center">Xtra Blog</h1>
         </div>
-        <nav class="tm-nav">
+        <nav class="tm-nav" id="tm-nav">            
             <ul>
                 <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
                     <i class="fas fa-home"></i>
@@ -56,9 +59,11 @@
     <div class="container-fluid">
         <main class="tm-main">
             <!-- Search form -->
-            <form class="form-inline tm-mb-80">            
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                <i class="fas fa-search" aria-hidden="true"></i>
+            <form class="form-inline tm-mb-80 tm-search-form">                
+                <input class="form-control tm-search-input" type="text" placeholder="Search..." aria-label="Search">
+                <button class="tm-search-button" type="submit">
+                    <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                </button>                                
             </form>
             <div class="row tm-posts-row">
                 <article class="col-12 col-md-6 tm-post">
@@ -127,5 +132,7 @@
             </div>
         </main>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tooplate-script.js"></script>
 </body>
 </html>
