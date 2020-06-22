@@ -62,14 +62,14 @@ a:hover { text-decoration: none; }
 
 .tm-main {
     margin-left: 400px;
-    padding: 80px 100px;
+    padding: 80px 100px 25px;
 }
 
 .tm-post {
     max-width: 470px;    
 }
 
-.tm-posts-row {
+.tm-row {
     max-width: 980px;
     justify-content: space-between;
 }
@@ -227,13 +227,57 @@ ul {
     color: #0CC;
 }
 
+.tm-prev-next {
+    display: inline-block;
+    background-color: #0CC;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 12px 43px;
+    transition: all 0.3s ease;
+}
+
+.tm-prev-next:hover {
+    background-color: #09b6b6;
+    color: white;
+}
+
+.tm-prev-next.disabled {
+    background-color: #F0F0F0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.tm-paging-nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.tm-paging-link {
+    background-color: #0CC;
+    color: white;
+    background-color: #0CC;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
 .tm-pt-20 { padding-top: 20px; }
 .tm-pt-30 { padding-top: 30px; }
 .tm-pt-45 { padding-top: 45px; }
 .tm-pt-60 { padding-top: 60px; }
 .tm-mb-65 { margin-bottom: 65px; }
+.tm-mb-75 { margin-bottom: 75px; }
 .tm-mb-80 { margin-bottom: 80px; }
+.tm-mt-100 { margin-top: 100px; }
+.tm-mr-20 { margin-right: 20px; }
 .tm-color-primary, span.tm-color-primary { color: #099; }
+.tm-color-gray { color: #999; }
 button:focus { outline: none; }
 
 @media (max-width: 1540px) {
