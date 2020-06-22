@@ -4,14 +4,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 2em;
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
+p, span { color: #999; }
+hr { 
+    border-top-color: #CCC; 
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.form-control::-webkit-input-placeholder { color: #999; }  
+.form-control:-ms-input-placeholder { color: #999; }  
+.form-control::placeholder { color: #999; }
+a:hover { text-decoration: none; }
 
 .tm-header {
     background-color: #0CC;
@@ -196,8 +203,37 @@ ul {
     font-size: 1.3rem;
 }
 
+.tm-post-link {
+    border-top: 5px solid #0CC;
+    display: block;
+}
+
+.tm-post { margin-bottom: 75px; }
+
+.tm-new-badge {
+    top: -30px;
+    right: -10px;
+    background-color: #0CC;
+    color: white;
+    padding: 5px 20px;
+}
+
+.tm-post-title {
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+
+.tm-post-link:hover .tm-post-title {
+    color: #0CC;
+}
+
+.tm-pt-20 { padding-top: 20px; }
+.tm-pt-30 { padding-top: 30px; }
+.tm-pt-45 { padding-top: 45px; }
+.tm-pt-60 { padding-top: 60px; }
 .tm-mb-65 { margin-bottom: 65px; }
 .tm-mb-80 { margin-bottom: 80px; }
+.tm-color-primary, span.tm-color-primary { color: #099; }
 button:focus { outline: none; }
 
 @media (max-width: 1540px) {
