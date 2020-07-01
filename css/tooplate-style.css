@@ -227,45 +227,64 @@ ul {
     color: #0CC;
 }
 
-.tm-prev-next {
+.tm-btn {
     display: inline-block;
-    background-color: #0CC;
-    color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 1.3rem;
-    padding: 12px 43px;
     transition: all 0.3s ease;
 }
 
-.tm-prev-next:hover {
+.tm-btn-primary {    
+    background-color: #0CC;
+    color: white;    
+}
+
+.tm-btn-primary:hover {
     background-color: #09b6b6;
     color: white;
 }
 
-.tm-prev-next.disabled {
-    background-color: #F0F0F0;
-    color: #999;
-    cursor: not-allowed;
+.tm-prev-next {    
+    padding: 12px 43px;    
 }
 
 .tm-paging-nav ul li {
     list-style: none;
     display: inline-block;
+    margin-right: 10px;
+}
+
+.tm-paging-nav ul li:last-child {
+    margin-right: 0;
 }
 
 .tm-paging-link {
-    background-color: #0CC;
-    color: white;
-    background-color: #0CC;
-    color: white;
+    background-color: #F0F0F0;
+    color: #999;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-size: 1.3rem;
+    justify-content: center;    
 }
+
+.tm-paging-item .tm-paging-link:hover,
+.tm-paging-item.active .tm-paging-link {
+    background-color: #0CC;
+    color: white;
+}
+
+.tm-btn.disabled {
+    background-color: #F0F0F0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.tm-external-link {
+    color: #0CC;
+}
+
+.tm-external-link:hover { color: #09b6b6; }
 
 .tm-pt-20 { padding-top: 20px; }
 .tm-pt-30 { padding-top: 30px; }
