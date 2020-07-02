@@ -18,7 +18,6 @@ hr {
 .form-control::-webkit-input-placeholder { color: #999; }  
 .form-control:-ms-input-placeholder { color: #999; }  
 .form-control::placeholder { color: #999; }
-a:hover { text-decoration: none; }
 
 .tm-header {
     background-color: #0CC;
@@ -324,7 +323,7 @@ video {
 }
 
 .tm-comment-reply {
-    padding-left: 30px;
+    padding-left: 37px;
 }
 
 .form-control {
@@ -335,6 +334,23 @@ video {
 
 .tm-comment-form {
     max-width: 360px;
+}
+
+.tm-category-list {
+    list-style-type: none;
+}
+
+figure { margin: 0; }
+figcaption { line-height: 1.4; }
+
+.tm-post {
+    max-width: 600px;
+}
+
+.tm-post-sidebar {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .tm-pt-20 { padding-top: 20px; }
@@ -352,6 +368,14 @@ video {
 .tm-color-primary, span.tm-color-primary { color: #099; }
 .tm-color-gray { color: #999; }
 button:focus { outline: none; }
+a:hover { 
+    text-decoration: none; 
+    color: #048c8c;
+}
+
+a:hover figcaption {
+    color: #056767;
+}
 
 @media (max-width: 1540px) {
     .tm-header {
