@@ -395,6 +395,12 @@ a:hover figcaption {
     }
 }
 
+@media (max-width: 1166px) {
+    .tm-main {
+        padding-right: 50px;
+    }
+}
+
 @media (max-width: 1086px) {
     .form-inline .form-control.tm-search-input {
         width: 80%;
@@ -439,6 +445,11 @@ a:hover figcaption {
         margin-left: 0;
         padding: 50px 40px;
         width: 100%;
+    }
+
+    .tm-post-sidebar {
+        margin-left: 0;
+        margin-right: auto;
     }
 }
 
