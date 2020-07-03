@@ -246,6 +246,10 @@ ul {
     border: none;
 }
 
+.tm-btn-small {
+    padding: 8px 33px;
+}
+
 .tm-btn-primary:hover {
     background-color: #09b6b6;
     color: white;
@@ -376,6 +380,8 @@ a:hover {
 a:hover figcaption {
     color: #056767;
 }
+
+.img-thumbnail { max-width: none; }
 
 @media (max-width: 1540px) {
     .tm-header {
