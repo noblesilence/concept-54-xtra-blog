@@ -209,7 +209,6 @@ ul {
 }
 
 .tm-post-link {
-    border-top: 5px solid #0CC;
     display: block;
 }
 
@@ -347,7 +346,7 @@ video {
 figure { margin: 0; }
 figcaption { line-height: 1.4; }
 
-.tm-post {
+.tm-post-full {
     max-width: 600px;
 }
 
