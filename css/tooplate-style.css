@@ -262,6 +262,11 @@ ul {
     transition: all 0.3s ease;
 }
 
+.tm-h3 {
+    font-size: 1.3rem;
+    color: #999;
+}
+
 .tm-post-link:hover .tm-post-title {
     color: #0CC;
 }
@@ -398,13 +403,16 @@ figcaption { line-height: 1.4; }
 .tm-mb-40 { margin-bottom: 40px; }
 .tm-mb-45 { margin-bottom: 45px; }
 .tm-mb-55 { margin-bottom: 55px; }
+.tm-mb-60 { margin-bottom: 60px; }
 .tm-mb-65 { margin-bottom: 65px; }
 .tm-mb-75 { margin-bottom: 75px; }
 .tm-mb-80 { margin-bottom: 80px; }
+.tm-mb-120 { margin-bottom: 120px; }
 .tm-mt-100 { margin-top: 100px; }
 .tm-mr-20 { margin-right: 20px; }
 .tm-color-primary, span.tm-color-primary { color: #099; }
 .tm-color-gray { color: #999; }
+.tm-bg-gray { background-color: #F3F4F5; }
 button:focus { outline: none; }
 a:hover { 
     text-decoration: none; 
