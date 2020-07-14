@@ -411,7 +411,8 @@ figcaption { line-height: 1.4; }
 .tm-mt-100 { margin-top: 100px; }
 .tm-mr-20 { margin-right: 20px; }
 .tm-color-primary, span.tm-color-primary { color: #099; }
-.tm-color-gray { color: #999; }
+a.tm-color-gray, .tm-color-gray { color: #999; }
+a.tm-color-gray:hover { color: #099; }
 .tm-bg-gray { background-color: #F3F4F5; }
 button:focus { outline: none; }
 a:hover { 
@@ -431,6 +432,38 @@ a:hover figcaption {
 }
 
 .tm-line-height-short { line-height: 1.8; }
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:477px;
+    width:100%;
+}
+
+.tm-social-links li { 
+    list-style: none; 
+    display: inline-block;
+}
+
+.tm-social-links li a {
+    display: block;
+    color: white;
+    background-color: #0CC;
+    width: 45px;
+    height: 45px;    
+    margin-right: 15px;    
+}
+
+.tm-social-links li a i { transition: all 0.3s ease; }
+
+.tm-social-links li a:hover i.fa-facebook { color: #3b5998; }
+.tm-social-links li a:hover i.fa-twitter { color: #00acee; }
+.tm-social-links li a:hover i.fa-youtube { color: #c4302b; }
+.tm-social-links li a:hover i.fa-instagram { color: #3f729b; }
+
+.tm-contact-right {
+    padding-left: 55px;
+}
 
 @media (max-width: 1540px) {
     .tm-header {
