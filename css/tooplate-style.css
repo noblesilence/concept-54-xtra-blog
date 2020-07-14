@@ -659,7 +659,5 @@ a:hover figcaption {
 }
 
 @media (max-width: 380px) {
-    .tm-person {
-        flex-direction: column;
-    }
+    .tm-person { flex-direction: column; }
 }
