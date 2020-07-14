@@ -430,6 +430,8 @@ a:hover figcaption {
     max-width: 430px;
 }
 
+.tm-line-height-short { line-height: 1.8; }
+
 @media (max-width: 1540px) {
     .tm-header {
         width: 26%;
