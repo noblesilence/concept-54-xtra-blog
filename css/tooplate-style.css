@@ -615,14 +615,17 @@ a:hover figcaption {
         text-align: left;
     }
 }
-
-@media (max-width: 1125px), (max-width: 709px) {
-    .tm-person {
-        flex-direction: column;
+/* , (max-width: 709px) */
+@media (max-width: 1125px) and (min-width: 992px) {
+    .tm-person-col {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
+}
 
-    .tm-person img {
-        margin-bottom: 15px;
+@media (max-width: 709px) {
+    .tm-person-col {
+        width: 100%;
     }
 }
 
@@ -660,5 +663,5 @@ a:hover figcaption {
 }
 
 @media (max-width: 380px) {
-    .tm-person { flex-direction: column; }
+    .tm-person img { max-width: 120px; }
 }
