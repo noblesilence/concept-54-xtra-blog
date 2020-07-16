@@ -523,6 +523,10 @@ a:hover figcaption {
     .tm-post-sidebar {
         max-width: 440px;
     }
+
+    .form-inline .form-control.tm-search-input {
+        width: 420px;
+    }
 }
 
 @media (max-width: 1086px) {
